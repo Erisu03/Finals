@@ -1,0 +1,20 @@
+{% extends 'pages/index.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <div class="container">
+        <h1>Delete Order</h1>
+
+        <p>Are you sure you want to delete the order for {{ product.name }} - ${{ product.price }}?</p>
+
+        <form method="post" action="{% url 'delete_order' product.id %}" class="mt-4">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">Delete Order</button>
+            <a href="{% url 'ordering_page' %}" class="btn btn-secondary">Cancel</a>
+        </form>
+
+    </div>
+
+{% endblock %}

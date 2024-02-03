@@ -1,0 +1,174 @@
+{% extends 'pages/index.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .home {
+        background: url('{% static 'images/bg.jpg' %}') center center/cover no-repeat; /* Replace 'path/to/your/image.jpg' with the actual path 
+</style>
+         <section class="home" id="home">
+            <div class="home-text">
+                <div class="slide">
+                    <span class="one">Hello</span>
+                    <span class="two">We are</span>
+                </div>
+                <h1>Hazie Coffee shop</h1>
+                <h3><span>Expresso</span> Yourself.</h3>
+                <p>We deliver you the greatest quality coffee that may lift your<br> spirits; we serve any type of excellent coffee at an affordable price that is delightful.</p>
+                    <div class="button">
+                        <a href="mailto:natinohazel17@gmail.com" class="btn">Say Hello</a>
+                        <a href="#portfolio" class="btn2"><span><i class='bx bx-play'></i></span>See our products</a>
+                    </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="{% static 'images/bean.jpg' %}" alt="sean">
+            </div>
+
+            <div class="about-text">
+                <h2>About <span>Us</span></h2>
+                <h4>Coffee Shop</h4>
+                <p>At Hazie Coffee Shop, we are passionate about the art of coffee-making. We have curated an exceptional selection of beans sourced from around the globe, ensuring that each sip transports you to the lush plantations and vibrant cultures where our coffee originates. Our dedicated team of skilled baristas meticulously craft each cup, striving for perfection in every pour, and ensuring that the flavor profiles of our beans are brought to life with each delightful sip.
+                    </p>
+                    
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="main-text">
+                <p>What we are Expert In</p>
+                <h2><span>Our</span> Services</h2>
+            </div>
+
+            <div class="services-content">
+                <div class="box">
+                    <div class="s-icons">
+                        <i class='bx bxs-coffee-bean'></i>
+                    </div>
+                    <h3>Latte art</h3>
+                    <p>Latte art is a delightful fusion of creativity, skill, and coffee craftsmanship. It's a captivating form of beverage artistry that transforms a simple cup of coffee into a visual masterpiece. Talented baristas pour steamed milk with precision and finesse, meticulously manipulating its flow to create intricate patterns, designs, and shapes atop a smooth canvas of espresso.</p>
+                    <a href="https://en.wikipedia.org/wiki/Latte_art" target="_blank" class="read">Read More</a>
+                </div>
+
+                <div class="box">
+                    <div class="s-icons">
+                        <i class='bx bxs-user-check'></i>
+                    </div>
+                    <h3>Skilled Barista</h3>
+                    <p>A skilled barista is a true artisan of coffee, weaving together their knowledge, passion, and craftsmanship to create a beverage experience that transcends the ordinary. With a deep understanding of coffee beans, brewing techniques, and flavor profiles, they curate a symphony of aromas and tastes with each cup they prepare.</p>
+                    <a href="https://en.wikipedia.org/wiki/Barista" target="_blank" class="read">Read More</a>
+                </div>
+
+                <div class="box">
+                    <div class="s-icons">
+                        <i class='bx bx-line-chart'></i>
+                    </div>
+                    <h3>Service Excellence</h3>
+                    <p>Good service at a coffee shop is more than just a transaction; it's an art of hospitality that leaves a lasting impression on customers. It begins with a warm and genuine welcome, accompanied by a smile that sets the stage for a delightful experience.</p>
+                    <a href="https://hospitalityinsights.ehl.edu/what-is-service-excellence" target="_blank" class="read">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <div class="main-text">
+                <p>Services</p>
+                <h2><span>Latest</span> Products</h2>
+            </div>
+
+            <div class="portfolio-content">
+                <div class="row">
+                    <img src="{% static 'images/brewd.jpg' %}" alt="portfolio">
+                    <div class="layer">
+                        <h5>Brewd Coffee</h5>
+                        <p>Brewed coffee is one of the most popular beverages in the world, with millions of people consuming it daily.</p>
+            
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="{% static 'images/americano.jpg' %}" alt="portfolio">
+                    <div class="layer">
+                        <h5>Americano</h5>
+                        <p>There is dispute about whether the espresso or the water should be added first, but in the case of the americano, espresso should always be added first as the crema mixes in and creates a more mellow, even taste..</p>
+                        
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="{% static 'images/cappuccino.jpg' %}" alt="portfolio">
+                    <div class="layer">
+                        <h5>Cappuccino</h5>
+                        <p>Beyond Italy, cappuccino is a coffee drink that today is typically composed of a single, double, or triple espresso shot and hot milk, with the surface topped with foamed milk.</p>         
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="{% static 'images/frappe.jpg' %}" alt="portfolio">
+                    <div class="layer">
+                        <h5>Coffee Frappe</h5>
+                        <p>Beyond Italy, cappuccino is a coffee drink that today is typically composed of a single, double, or triple espresso shot and hot milk, with the surface topped with foamed milk.</p>                       
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="{% static 'images/glace.jpg' %}" alt="portfolio">
+                    <div class="layer">
+                        <h5>Coffee glace</h5>
+                        <p>Café glace is a refreshing coffee beverage that combines a number of elements to produce a frothy and delicious drink.</p>  
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="{% static 'images/macchiato.jpg' %}" alt="portfolio">
+                    <div class="layer">
+                        <h5>Coffee Macchiato</h5>
+                        <p>A macchiato is sometimes known as an espresso macchiato or a caffè macchiato. In the most basic terms, it is an espresso with a dash of milk. The name macchiato comes from Italian, and it means marked, stained, or spotted. </p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-text">
+                <h2>Contact <span>Us!</span></h2>
+                <h4>If you want to Order to our Shop.</h4>
+                <p>Experience the unparalleled greatness of our coffee shop.<br> Indulge in the rich aroma of freshly brewed beans, delight in the expertly crafted beverages,<br> and savor the smooth, velvety textures that dance upon your palate.</p>
+                <div class="list">
+                    <li><a href="tel:09684147298">+6968-414-7298</a></li>
+                    <li><a href="mailto:natinohazel17@gmail.com">natinohazel17@gmail.com</a></li>
+                    <li><a href="#">Like Share & Subscribe</a></li>
+                </div>
+                <div class="contact-icons">
+                    <a href="https://www.facebook.com/zellynatino17" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/haziehazeln/?igshid=MzNlNGNkZWQ4Mg%3D%3D&fbclid=IwAR36WwLIfKxI_xhHKdfm0VAb9hRamYCWO0ml4Wrxy5aKUsadoU5b-Dnx6MI" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form action="">
+                    <input type="name" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="" placeholder="Your mobile number" required>
+                    <textarea name="" id="" cols="35" rows="10" placeholder="How can i help you?" required></textarea>
+                    <input type="submit" value="Send Message" class="submit" required>
+                </form>
+            </div>
+        </section>
+
+        <section class="end">
+            <div class="last-text">
+                <p>Copyright © 2023 by Hazel Natino All Rights Reserved.</p>
+            </div>
+
+            <div class="top">
+                <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+            </div>
+        </section>
+        
+        <script type="text/javascript" src="files/script.js"></script>
+
+{% endblock %}

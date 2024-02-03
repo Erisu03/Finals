@@ -1,0 +1,17 @@
+{% extends 'pages/index.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <div class="container">
+        <h1>Create Customer</h1>
+
+        <form method="post" action="{% url 'customer_creation_page' %}" class="mt-4">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Create Customer</button>
+        </form>
+    </div>
+
+{% endblock %}

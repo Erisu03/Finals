@@ -1,0 +1,24 @@
+{% extends 'pages/index.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <div class="container">
+        <h1>Ordering Page</h1>
+
+        <form method="post" action="{% url 'ordering_page' %}" class="mt-4">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Place Order</button>
+        </form>
+
+        <h2 class="mt-4">Available Products</h2>
+        <ul class="list-group">
+            {% for product in products %}
+                <li class="list-group-item">{{ product.name }} - ${{ product.price }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endblock %}
